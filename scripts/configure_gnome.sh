@@ -76,13 +76,6 @@ prompt_enable_disable "Power saver mode on low battery" \
     "gsettings set org.gnome.settings-daemon.plugins.power power-saver-profile-on-low-battery true" \
     "gsettings set org.gnome.settings-daemon.plugins.power power-saver-profile-on-low-battery false"
 
-# Sort folders before files in GNOME file manager (Nautilus)
-log "Sorting folders before files in Nautilus..."
-if ! gsettings set org.gnome.nautilus.preferences sort-directories-first true; then
-    error "Failed to set folder sorting."
-    exit 1
-fi
-
 # Set automatic deletion of trash content to 15 days
 log "Setting automatic trash deletion to 15 days..."
 if ! gsettings set org.gnome.desktop.privacy remove-old-trash-files true; then
