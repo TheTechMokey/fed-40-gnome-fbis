@@ -71,7 +71,8 @@ prompt_installation() {
 
 "$SCRIPT_DIR/install_hardware_acceleration.sh"
 
-"$SCRIPT_DIR/configure_gnome.sh"
+#Disabling configure gnome until I can find official documentation on how to change these settings via bash
+# "$SCRIPT_DIR/configure_gnome.sh"
 
 if prompt_installation "Flatpak content creator apps"; then
     "$SCRIPT_DIR/install_flatpak_content_creator_apps.sh"
