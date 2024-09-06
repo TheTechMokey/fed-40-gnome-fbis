@@ -71,9 +71,7 @@ prompt_installation() {
 
 "$SCRIPT_DIR/install_hardware_acceleration.sh"
 
-if prompt_installation "Gamemode"; then
-    "$SCRIPT_DIR/install_gamemode.sh"
-fi
+"$SCRIPT_DIR/configure_gnome.sh"
 
 if prompt_installation "Flatpak content creator apps"; then
     "$SCRIPT_DIR/install_flatpak_content_creator_apps.sh"
@@ -91,12 +89,16 @@ if prompt_installation "Flatpak office apps"; then
     "$SCRIPT_DIR/install_flatpak_office_apps.sh"
 fi
 
+if prompt_installation "Game launcher apps"; then
+    "$SCRIPT_DIR/install_game_launcher_apps.sh"
+fi
+
 if prompt_installation "Flatpak gamer apps"; then
     "$SCRIPT_DIR/install_flatpak_gamer_apps.sh"
 fi
 
-if prompt_installation "Game launcher apps"; then
-    "$SCRIPT_DIR/install_game_launcher_apps.sh"
+if prompt_installation "Gamemode"; then
+    "$SCRIPT_DIR/install_gamemode.sh"
 fi
 
 if prompt_installation "Wine and Proton dependencies"; then
@@ -105,4 +107,3 @@ fi
 
 "$SCRIPT_DIR/verify_nvidia.sh"
 
-"$SCRIPT_DIR/configure_gnome.sh"
