@@ -2,7 +2,9 @@
 
 source "$(dirname "$0")/../logging.sh"
 
-local -a developer_flathub_install=(
+install_flathub_developer () {
+local -a developer_flathub_install
+    developer_flathub_install=(
     "com.github.tchx84.Flatseal"
     "com.github.wwmm.easyeffects"
     "com.visualstudio.code"
@@ -16,3 +18,5 @@ local -a developer_flathub_install=(
 
 )
 flatpak install -y flathub "${developer_flathub_install[@]}"
+}
+install_flathub_developer

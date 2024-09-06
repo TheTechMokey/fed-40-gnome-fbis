@@ -3,8 +3,6 @@
 source "$(dirname "$0")/../logging.sh"
 
 log "Installing and configuring Gamemode..."
-
-log "Installing and configuring Gamemode..."
 if ! sudo dnf install -y gamemode; then
     error "Failed to install Gamemode."
     exit 1
