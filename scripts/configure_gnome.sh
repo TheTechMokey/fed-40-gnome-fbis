@@ -76,13 +76,6 @@ prompt_enable_disable "Power saver mode on low battery" \
     "gsettings set org.gnome.settings-daemon.plugins.power power-saver-profile-on-low-battery true" \
     "gsettings set org.gnome.settings-daemon.plugins.power power-saver-profile-on-low-battery false"
 
-# Prompt to enable or disable automatic problem reporting
-prompt_enable_disable "Automatic problem reporting" \
-    "sudo systemctl enable abrt-ccpp.service --now" \
-    "sudo systemctl disable abrt-ccpp.service --now"
-
-log "User-based GNOME configuration is complete."
-
 # Sort folders before files in GNOME file manager (Nautilus)
 log "Sorting folders before files in Nautilus..."
 if ! gsettings set org.gnome.nautilus.preferences sort-directories-first true; then
