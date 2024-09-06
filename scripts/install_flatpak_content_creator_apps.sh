@@ -9,7 +9,6 @@ local -a content_creator_flathub_install
     "com.obsproject.Studio"
     "com.obsproject.Studio.Plugin.OBSVkCapture"
     "org.freedesktop.Platform.VulkanLayer.OBSVkCapture"
-    "project.Studio.Plugin.GStreamerVaapi"
     "com.obsproject.Studio.Plugin.Gstreamer"
     "org.blender.Blender"
     "org.pipewire.Helvum"
