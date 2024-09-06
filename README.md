@@ -1,8 +1,8 @@
 # fed-40-gnome-fbis
  Fedora 40 Gnome First Boot Install Script
 
-## This install is for Fedora 40 Workstation with Gnome only.
-
+## This install is intended for a fresh install of Fedora 40 Workstation with Gnome only.
+You could run it after, nothing should append and all should overwrite and error check.
 ## NOTE:
 This is utilizing a AMD Ryzen 9 5900X and a NVIDIA GeForce RTX 4080 SUPER. If you are in need of other GPU or CPU settings on the installer... I will make a seperate install script for that... maybe? When I get time? 
 
