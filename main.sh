@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source logging.sh
+source "$(dirname "$0")/logging.sh"
 
 # Function to check Secure Boot status
 check_secure_boot() {
@@ -32,5 +32,22 @@ SCRIPT_DIR="$(dirname "$0")/scripts"
 
 # Call the individual scripts
 "$SCRIPT_DIR/configure_dnf.sh"
-"$SCRIPT_DIR/install_coref.sh"
-
+"$SCRIPT_DIR/install_core.sh"
+"$SCRIPT_DIR/install_rpm_fusion.sh"
+"$SCRIPT_DIR/add_repositories.sh"
+"$SCRIPT_DIR/update_system.sh"
+"$SCRIPT_DIR/update_firmware.sh"
+"$SCRIPT_DIR/install_flatpak_apps.sh"
+"$SCRIPT_DIR/install_flatpak_content_creator_apps.sh"
+"$SCRIPT_DIR/install_flatpak_developer_apps.sh"
+"$SCRIPT_DIR/install_flatpak_network_tools_apps.sh"
+"$SCRIPT_DIR/install_flatpak_office_apps.sh"
+"$SCRIPT_DIR/install_flatpak_gamer_apps.sh"
+"$SCRIPT_DIR/install_game_launcher_apps.sh"
+"$SCRIPT_DIR/install_media_codecs.sh"
+"$SCRIPT_DIR/install_nvidia_drivers.sh"
+"$SCRIPT_DIR/install_hardware_acceleration.sh"
+"$SCRIPT_DIR/install_gamemode.sh"
+"$SCRIPT_DIR/install_wine_proton_dependencies.sh"
+"$SCRIPT_DIR/verify_nvidia.sh"
+"$SCRIPT_DIR/configure_gnome.sh"
