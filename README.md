@@ -40,6 +40,7 @@ Set up Name, Username, and Password.
 ### NEXT, NEXT, NEXT.
 Next it all to completion (disable information gathering and location services if you want)
 ### Open Terminal
+#### If you are new to Linux TAB IS YOUR FRIEND!
 Overview -> Terminal
 ### Change Directories
 ```bash
