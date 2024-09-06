@@ -5,6 +5,7 @@
 
 ## NOTE:
 This is utilizing a AMD Ryzen 9 5900X and a NVIDIA GeForce RTX 4080 SUPER. If you are in need of other GPU or CPU settings on the installer... I will make a seperate install script for that... maybe? When I get time? 
+
 This install is based on my own preferences and experiences. All applications are the applications I currently use or have used. I am open to suggestions for how the script(s) operate and what applications people use. I like new things :D
 
 ## What does this install script do?
@@ -12,13 +13,17 @@ This install script is a compiliation of information I've learned while using Fe
 ### This script will do the following:
 #### Configure your DNF settings
 `fastestmirror=1`
+
 `max_parallel_downloads=10`
-`countme=false` #DNF will not send any usage statistics
+
+`countme=false #DNF will not send any usage statistics`
+
 #### Update system and firmware
 #### Install Nvidia Drivers
 #### Install Codecs
 #### Install flatpak groups for different uses based on your choices
 Content creation, Developer, gamer, networking, office, and game launchers
+
 Note: Steam and Lutris are RPM installs while Heroic Games Launcher is a flatpak. This is my preference.
 #### Validate Nvidia Kernels are built.
 
