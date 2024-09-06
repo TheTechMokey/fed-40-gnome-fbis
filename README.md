@@ -59,7 +59,7 @@ sudo ./install.sh
 ```
 ### Follow prompts
 Y Y Y Y Y...
-If it asks you for a specific version of a package, choose the newest.. or not.. IDC it's your choice, it's your computer afterall. 
+If it asks you for a specific version of a package, choose the newest.. or not.. IDC it's your choice, it's your computer after all. 
 ### Reboot
 ```bash
 sudo reboot
