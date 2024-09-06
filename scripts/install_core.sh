@@ -5,7 +5,7 @@ source "$(dirname "$0")/../logging.sh"
 log "Starting core installation..."
 
 # Define the packages to install
-packages="xrandr gnome-tweaks gnome-extensions-app"
+packages="xrandr gnome-tweaks gnome-extensions-app wget"
 
 # Install the packages
 if sudo dnf install -y $packages; then
